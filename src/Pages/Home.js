@@ -2,8 +2,6 @@ import axios from "axios";
 import React, { useState } from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "../Component/Navbar";
-
 function Home() {
   const [City, setCity] = useState("");
   const [Weatherdata, setWeatherdata] = useState([]);
@@ -29,7 +27,6 @@ function Home() {
   };
   return (
     <>
-      <Navbar />
       <div className="col-md-12">
         <div className="Weatherbg">
           <h1 className="Headingmian">Weather Mast</h1>

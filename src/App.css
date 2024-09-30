@@ -3,9 +3,8 @@
   --col: white;
   --bg1: #b2bec3;
 }
-
 .Weatherbg {
-  background: url("C:\Users\Dishant sangani\Desktop\weather\public\Background.jpg");
+  background: url("../public/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 65vh;
@@ -78,7 +77,7 @@ h5 {
   text-align: center;
 }
 .starter-image {
-  background: url("C:\Users\Dishant sangani\Desktop\weather\public\Background.jpg");
+  background: url("../public/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;
@@ -107,4 +106,9 @@ h5 {
   display: flex;
   justify-content: center;
   align-self: center;
+}
+
+/* Footer */
+.footer {
+  background: var(--bg1);
 }

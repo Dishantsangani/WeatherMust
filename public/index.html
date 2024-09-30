@@ -9,10 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
+    <link rel="manifest" href="manifest.json" />
     <title>WeatherMast</title>
   </head>
   <body>
@@ -20,6 +17,17 @@
     <div id="root"></div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("serviceWorker.js")
+        .then(() => {
+          console.log("Service Worker is Registered");
+        })
+        .catch(() => {
+          console.log("Error For Service Worker");
+        });
+    }
+  </script>
 </html>

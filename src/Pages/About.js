@@ -1,10 +1,8 @@
 import React from "react";
-import Navbar from "../Component/Navbar";
 import "../App.css";
 function About() {
   return (
     <>
-      <Navbar />
       <main role="main" className="container-fluid">
         <div className="starter-template">
           <div className="starter-image">
@@ -23,7 +21,7 @@ function About() {
           <h3>Functions</h3>
           <p>
             ● getweather : An asynchronous function triggered when the user
-            clicks the "Search" button. 
+            clicks the "Search" button.
           </p>
           <p>
             ● Makes an API call to the OpenWeatherMap API to fetch weather data
@@ -57,7 +55,14 @@ function About() {
             the code. In a production application, it's advisable to secure the
             API key using environment variables or a server-side proxy.
           </p>
-          <h5>© 2024 Dishant Sangani | All rights reserved.</h5>
+          <h5 className="footer">
+            © 2024
+            <a href="https://bento.me/dishantsangani" target="_blank">
+              {" "}
+              Dishant Sangani{"  "}
+            </a>
+            | All rights reserved.
+          </h5>
         </div>
       </main>
     </>
